@@ -9,11 +9,26 @@ export const skillItems = [
   {
     title: "Skill 2",
     description: "Description for skill 2",
-    link: "/link2",
+    link: "/",
   },
   {
     title: "Skill 3",
     description: "Description for skill 3",
-    link: "/link3",
+    link: "/",
+  },
+  {
+    title: "Skill 4",
+    description: "Desc for skill 4",
+    link: "/",
+  },
+  {
+    title: "Skill 4",
+    description: "Desc for skill 4",
+    link: "/",
+  },
+  {
+    title: "Skill 4",
+    description: "Desc for skill 4",
+    link: "/",
   },
 ];

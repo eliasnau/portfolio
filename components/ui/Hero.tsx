@@ -126,11 +126,11 @@ export const Hero = ({
           ...(isSafari ? { filter: `blur(${blur}px)` } : {}),
         }}></canvas>
       <div className={cn("relative z-10 text-center", className)} {...props}>
-        <p className="font-semibold">
+        <p className="font-semibold mb-2">
           Programmer
         </p>
         {title && <h1 className="text-8xl font-bold mb-4">{title}</h1>}
-        <p className="font-bold text-2xl">Welcome to my Portfolio!</p>
+        <p className="font-bold text-2xl mt-2">Welcome to my Portfolio!</p>
         {children}
       </div>
     </div>
