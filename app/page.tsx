@@ -13,6 +13,7 @@ export default function Title() {
       <Skills items={skillItems} />
       <h1 className="text-center font-bold text-2xl">My Work Experience</h1>
       <Work items={WorkItems} />
+      
     </div>
   );
 }

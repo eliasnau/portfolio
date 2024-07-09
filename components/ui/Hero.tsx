@@ -3,6 +3,7 @@ import { cn } from "@/utils/cn";
 import React, { useEffect, useRef, useState } from "react";
 import { createNoise3D } from "simplex-noise";
 import "@/styles.css";
+import { Highlight } from "@/components/ui/hero-highlight";
 
 export const Hero = ({
   children,
@@ -38,6 +39,7 @@ export const Hero = ({
     ctx: any,
     canvas: any;
   const canvasRef = useRef<HTMLCanvasElement>(null);
+
   const getSpeed = () => {
     switch (speed) {
       case "slow":
@@ -71,6 +73,7 @@ export const Hero = ({
     "#e879f9",
     "#22d3ee",
   ];
+
   const drawWave = (n: number) => {
     nt += getSpeed();
     for (i = 0; i < n; i++) {
@@ -79,7 +82,7 @@ export const Hero = ({
       ctx.strokeStyle = waveColors[i % waveColors.length];
       for (x = 0; x < w; x += 5) {
         var y = noise(x / 800, 0.3 * i, nt) * 100;
-        ctx.lineTo(x, y + h * 0.5); // adjust for height, currently at 50% of the container
+        ctx.lineTo(x, y + h * 0.5);
       }
       ctx.stroke();
       ctx.closePath();
@@ -104,7 +107,6 @@ export const Hero = ({
 
   const [isSafari, setIsSafari] = useState(false);
   useEffect(() => {
-    // I'm sorry but i have got to support it on safari.
     setIsSafari(
       typeof window !== "undefined" &&
         navigator.userAgent.includes("Safari") &&
@@ -126,11 +128,13 @@ export const Hero = ({
           ...(isSafari ? { filter: `blur(${blur}px)` } : {}),
         }}></canvas>
       <div className={cn("relative z-10 text-center", className)} {...props}>
-        <p className="font-semibold mb-2 text-white">
-          Programmer
+        <p className="font-semibold mb-2 text-white">Programmer</p>
+        {title && (
+          <h1 className="text-8xl font-bold mb-4 text-white"> {title}</h1>
+        )}
+        <p className="font-bold text-2xl mt-2 text-white">
+          Welcome to<Highlight>my Portfolio !</Highlight>
         </p>
-        {title && <h1 className="text-8xl font-bold mb-4 text-white">{title}</h1>}
-        <p className="font-bold text-2xl mt-2 text-white">Welcome to my Portfolio!</p>
         {children}
       </div>
     </div>

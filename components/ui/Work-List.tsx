@@ -44,7 +44,7 @@ export const WorkItems = [
   {
     title: "Note:",
     description:
-      "Everything above was KI generated and does not correspond to my actual Work Experience. This is just a placeholder",
+      "Everything above was KI generated and does not correspond to my actual Work Experience. This is just a placeholder. (In case I forget to change this :) ).",
     link: "/",
     style:
       "bg-gray-500/[0.2] group-hover:border-gray-700 relative z-20 dark:border-gray-950/[1]",
