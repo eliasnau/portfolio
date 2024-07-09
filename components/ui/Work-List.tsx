@@ -13,7 +13,7 @@ export const WorkItems = [
     title: "Full-Stack Developer with UE5 Integration",
     description:
       "I worked as a Full-Stack Developer, where I was responsible for both front-end and back-end website development. My tasks included developing dynamic, database-driven websites using PHP and MySQL, and implementing interactive front-end features using React. I also had the opportunity to integrate Unreal Engine 5 elements into our web projects, creating immersive 3D experiences that set our websites apart from the competition. This unique combination of web development and UE5 integration allowed us to deliver cutting-edge web solutions.",
-    link:"",
+    link: "",
     style:
       "bg-green-500/[0.1] group-hover:border-green-800 relative z-20 dark:border-green-950/[1]",
   },

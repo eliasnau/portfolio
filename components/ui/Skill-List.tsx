@@ -11,7 +11,7 @@ export const skillItems = [
     title: "Also coding",
     description:
       "I already coded with react, Unreal Engine 5, Unity, a bit of python and also a bit of java because I tried to make a Minecraft mod.",
-    link: "/",
+    link: "/", //https://pizza-menu-showcase.vercel.app
   },
   {
     title: "Sports",
