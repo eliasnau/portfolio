@@ -7,7 +7,7 @@ import { WorkItems } from "@/components/ui/Work-List";
 
 export default function Title() {
   return (
-    <div>
+    <div className="bg-black">
       <Hero />
       <h1 className="text-center font-bold text-2xl">My Skills</h1>
       <Skills items={skillItems} />
