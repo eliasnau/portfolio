@@ -5,12 +5,12 @@ import { TextGenerate } from "./Text-Generate";
 
 export default function AboutMe() {
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center min-h-screen bg-black">
       <HeroHighlight>
         <div className="max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="flex justify-center text-3xl mb-16 font-bold">Timothee Bels</p>
           <TextGenerate className="text-center">
-            I am an 8th-grade student at Ignaz-Günther-Gymnasium with an{" "}
+            I am an 8th-grade student at the Ignaz-Günther-Gymnasium with an{" "}
             <Highlight>interest in technology and programming.</Highlight>{" "}
             Through a school-offered technical course, I have gained
             foundational skills in programming, particularly in creating
