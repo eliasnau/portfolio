@@ -1,8 +1,6 @@
 import { cn } from "@/utils/cn";
 import Link from "next/link";
 import { useState } from "react";
-import { Highlight, HeroHighlight } from "@/components/ui/hero-highlight";
-
 
 export const Work = ({
   items = [],

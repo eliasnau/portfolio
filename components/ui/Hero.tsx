@@ -103,7 +103,7 @@ export const Hero = ({
     return () => {
       cancelAnimationFrame(animationId);
     };
-  }, []);
+  },);
 
   const [isSafari, setIsSafari] = useState(false);
   useEffect(() => {

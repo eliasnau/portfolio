@@ -15,7 +15,7 @@ export default function PleaseNo() {
       {/* Anchor link */}
       <a
         href="/"
-        className="bg-green-500 border-none rounded-md text-xl font-semibold px-10 py-1.5">
+        className="bg-green-500 border-none rounded-md text-xl font-semibold px-10 py-1.5 ">
         <button className="py-5">Go Back</button>
       </a>
           </div>
