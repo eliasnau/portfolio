@@ -5,7 +5,7 @@ import { TextGenerate } from "./Text-Generate";
 
 export default function AboutMe() {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-black">
+    <div className="flex justify-center items-center min-h-screen">
       <HeroHighlight>
         <div className="max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="flex justify-center text-3xl mb-16 font-bold">Timothee Bels</p>

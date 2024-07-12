@@ -33,7 +33,7 @@ export const TextGenerate = ({
           return (
             <motion.span
               key={idx}
-              className="dark:text-white text-black opacity-0"
+              className="dark:text-white text-white opacity-0"
             >
               {element}
             </motion.span>
